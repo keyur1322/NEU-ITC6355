@@ -10,30 +10,67 @@
         display: flex;
         justify-content: center;
     }
+    .title{
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+    }
+    .body-div{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .title-team-memeber, .title-professor{
+        font-size: 22px;
+        font-style: italic;
+        text-decoration: underline;
+        color: red;
+    }
+
+    .intro-div ul li{
+        font-size: 18px;
+    }
+    
+    .main-div p{
+        font-size: 22px;
+    }
+
+    .main-div ol li{
+        font-size: 18px;
+    }
+    span{
+        font-weight: bold;
+    }
 </style>
 <body>
-    <div class="logo-div">
-        <img src="northeastern-logo.png" alt="logo not found" width="300px">
-    </div>
-    <hr>
-    <div class="intro-div">
-        <h1>Hotel Reservation System</h1>
-        <p>Team member:</p>
-        <ul>
-            <li>Rudra Desai</li>
-            <li>Prachi Prajapati</li>
-            <li>Keyur Panchal</li>
-        </ul>
-    </div>
-    <div class="main-div">
-        <p>In this project, we are going to develop three to four page.</p>
-        <p>Here, I have mentioned about details that we will add into our pages.</p>
-        <ol>
-            <li>First page: Home page for hotel reservation system</li>
-            <li>Second page: Listing of hotels as per availability</li>
-            <li>Third page: Description of the room</li>
-            <li>Fourth page: User list on hotel reservation system</li>
-        </ol>
+    <div class="body-div">
+        <div class="logo-div">
+            <img src="northeastern-logo.png" alt="logo not found" width="300px">
+        </div>
+        <hr>
+        <div class="intro-div">
+            <p class="title">Hotel Reservation System</p>
+            <p class="title-team-memeber">Team member:</p>
+            <ul>
+                <li>Rudra Desai</li>
+                <li>Prachi Prajapati</li>
+                <li>Keyur Panchal</li>
+            </ul>
+            <p class="title-professor">Professor:</p>
+            <ul>
+                <li>Manisha Santhana Gopala Krishnan</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="main-div">
+            <p>In this project, we are going to develop <span style="text-decoration: underline;">three to four</span> page.</p>
+            <p>Here, I have mentioned about details that we will add into our pages.</p>
+            <ol>
+                <li><span>First page: </span>Home page for hotel reservation system</li>
+                <li><span>Second page: </span>Listing of hotels as per availability</li>
+                <li><span>Third page: </span>Description of the room</li>
+                <li><span>Fourth page: </span>User list on hotel reservation system</li>
+            </ol>
+        </div>
     </div>
 </body>
 </html>
