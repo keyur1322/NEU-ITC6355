@@ -153,7 +153,7 @@ footer {
     border: 0px;
     border-radius: 5px;
 }
-.filter-form {
+.filter-form, .view-more-div {
     display: flex;
 }
 .filter-form select {
@@ -162,11 +162,19 @@ footer {
     margin-right: 10px;
 }
 
-.filter-submit{
+.filter-submit, .view-more-btn{
     background: #3783BF;
     padding: 16px;
     color: white;
     border: 0px;
     border-radius: 5px 
+}
+.view-more-div{
+    justify-content: center;
+}
+.view-more-btn{
+    width: 20%;
+    background: #E74A5B;
+
 }
 /* Room page CSS end */
