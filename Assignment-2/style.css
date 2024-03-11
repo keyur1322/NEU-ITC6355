@@ -5,9 +5,20 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #F6F6F6;
+    color: black;
     padding: 20px;
+}
+
+.nav-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 40%;
 }
 
 nav ul {
@@ -22,16 +33,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
+/* Home page CSS start */
 .homepage {
     background-image: url('hotel-booking.png'); 
     background-size: cover;
-    color: #fff;
+    color: white;
     padding: 100px 20px;
     text-align: center;
+}
+
+.homepage a{
+    color: white;
 }
 
 .features {
@@ -46,8 +62,111 @@ nav ul li a {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #F6F6F6;
+    color: black;
     text-align: center;
     padding: 20px;
 }
+
+/* Home page CSS end */
+
+/* Room page CSS start */
+.rooms{
+    padding: 1%;
+}
+.rooms-heading-1{
+    text-align: center;
+    font-size: 1rem;
+    color: #1D5C94;
+    font-family: ui-monospace;
+    font-weight: bold;
+    margin: 0;
+}
+
+.rooms-heading-2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    margin: 0;
+    margin-top: 5px;
+}
+.rooms-heading-2 span{
+    color: #1D5C94;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.filter-section {
+    padding: 4%;
+    /* border: 1px solid #1D5C94; */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.room-img{
+    width: 30%;
+}
+.room-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.room-content{
+    width: 100%;
+    padding: 2%;
+}
+.room-card h2 {
+    margin-top: 0;
+}
+.room-card p {
+    margin: 10px 0;
+    color: #666565 !important;;
+}
+.room-card span{
+    color: black;
+    font-weight: bold;
+}
+.view-btn{
+    background: #3783BF;
+    padding: 16px;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+.book-btn{
+    background: lightgray;
+    padding: 16px;
+    color: black;
+    border: 0px;
+    border-radius: 5px;
+}
+.filter-form {
+    display: flex;
+}
+.filter-form select {
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.filter-submit{
+    background: #3783BF;
+    padding: 16px;
+    color: white;
+    border: 0px;
+    border-radius: 5px 
+}
+/* Room page CSS end */
