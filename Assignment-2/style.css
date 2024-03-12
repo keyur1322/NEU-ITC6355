@@ -17,6 +17,10 @@ header {
     align-items: center;
 }
 
+.nav-div a{
+    color: black !important;
+}
+
 .nav-logo{
     width: 40%;
 }
@@ -46,10 +50,9 @@ nav ul li a {
     text-align: center;
 }
 
-.homepage a{
-    color: white;
+.homepage h2, p, a{
+    color: white !important;
 }
-
 .features {
     display: flex;
     justify-content: space-around;
@@ -60,6 +63,9 @@ nav ul li a {
     text-align: center;
     flex: 1;
 }
+.feature p{
+    color: black !important;
+}
 
 footer {
     background-color: #F6F6F6;
@@ -68,6 +74,9 @@ footer {
     padding: 20px;
 }
 
+footer p{
+    color: black !important;
+}
 /* Home page CSS end */
 
 /* Room page CSS start */
@@ -77,7 +86,7 @@ footer {
 .rooms-heading-1{
     text-align: center;
     font-size: 1rem;
-    color: #1D5C94;
+    color: #1D5C94 !important;
     font-family: ui-monospace;
     font-weight: bold;
     margin: 0;
@@ -86,7 +95,7 @@ footer {
 .rooms-heading-2{
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: black !important;
     margin: 0;
     margin-top: 5px;
 }
