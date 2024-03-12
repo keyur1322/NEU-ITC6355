@@ -137,6 +137,10 @@ footer p{
     width: 100%;
     padding: 2%;
 }
+.room-content h2{
+    text-align: left !important;
+    color: #E74A5B !important;
+}
 .room-card h2 {
     margin-top: 0;
 }
