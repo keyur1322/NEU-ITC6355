@@ -42,3 +42,15 @@ function booking_confirmation(){
   document.getElementById('room_modal').style.display = 'none';
   alert("Your booking is confirmed");
 }
+
+function checkRoomAvailability(roomavail) {
+  var roomavail = document.getElementsByClassName(roomavail);
+  var roomavail_val = roomavail[0].innerHTML;
+  
+  if(roomavail_val === 'Yes')
+  {
+    alert('Your booking confirmed! Please complete your payment in the next step.')
+  }else{
+    alert('Sorry this room is not available!')
+  }
+}
