@@ -190,6 +190,13 @@ footer p{
     background: #E74A5B;
 }
 
+.avail_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
 /* Modal CSS */
 .modal {
     display: none;
@@ -206,9 +213,11 @@ footer p{
   .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
-    padding: 20px;
+    padding: 3%;
     border: 1px solid #888;
     width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
   }
   
   .close {
@@ -225,6 +234,34 @@ footer p{
     cursor: pointer;
   }
 
+  .modal-content p{
+    color: black !important;
+  }
+
+  .modal_sub_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+  }
+
+  #modal_title{
+    color: #3783BF;
+  }
+
+  #modal_price{
+    border: 1px solid black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1%;
+    border-radius: 10px;
+  }
+
+  #modal_avail{
+    margin-left: 10px;
+    color: #E74A5B !important;
+    font-weight: bold;
+  }
 /* Room page CSS end */
 
 /* About us page CSS start */
