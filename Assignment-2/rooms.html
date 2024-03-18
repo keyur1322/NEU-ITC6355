@@ -57,7 +57,7 @@
                         <p><span>Available: </span>Yes</p>
                         <p>Featuring a comfortable single bed adorned with crisp linens, you'll enjoy a restful night's sleep. The room is thoughtfully designed with modern amenities including a flat-screen TV, high-speed Wi-Fi, and a work desk, making it ideal for both work and relaxation.</p>
                     <div class="card-btn">
-                        <button class="view-btn">VIEW DETAIL</button>
+                        <button class="view-btn" onclick="open_modal()">VIEW DETAIL</button>
                         <button class="book-btn">BOOK NOW</button>
                     </div>
                     </div>
@@ -70,7 +70,7 @@
                         <p><span>Available: </span>No</p>
                         <p>Welcome to our luxurious Junior Suites, where comfort meets elegance. Designed with your utmost satisfaction in mind, our Junior Suites offer a spacious retreat for both leisure and business travelers alike.</p>
                     <div class="card-btn">
-                        <button class="view-btn">VIEW DETAIL</button>
+                        <button class="view-btn" onclick="open_modal()">VIEW DETAIL</button>
                         <button class="book-btn">BOOK NOW</button>
                     </div>
                     </div>
@@ -83,7 +83,7 @@
                         <p><span>Available: </span>Yes</p>
                         <p>Welcome to our triple rooms, where comfort meets convenience for groups or families seeking a memorable stay. Our spacious triple rooms are thoughtfully designed to accommodate three guests comfortably, offering ample space and modern amenities to ensure a relaxing retreat.</p>
                     <div class="card-btn">
-                        <button class="view-btn">VIEW DETAIL</button>
+                        <button class="view-btn" onclick="open_modal()">VIEW DETAIL</button>
                         <button class="book-btn">BOOK NOW</button>
                     </div>
                     </div>
@@ -96,7 +96,7 @@
                         <p><span>Available: </span>Yes</p>
                         <p>Each Presidential Suite is meticulously designed to reflect modern elegance and timeless charm, providing guests with a sanctuary of unparalleled luxury. From the moment you step through the door, you'll be enveloped in a world of indulgence and exclusivity.</p>
                     <div class="card-btn">
-                        <button class="view-btn">VIEW DETAIL</button>
+                        <button class="view-btn" onclick="open_modal()">VIEW DETAIL</button>
                         <button class="book-btn">BOOK NOW</button>
                     </div>
                     </div>
@@ -109,7 +109,7 @@
                         <p><span>Available: </span>No</p>
                         <p>Indulge in comfort and style in our inviting double rooms, designed to provide you with a serene sanctuary during your stay. Whether you're traveling for business or leisure, our thoughtfully appointed accommodations offer everything you need for a relaxing and enjoyable experience.</p>
                     <div class="card-btn">
-                        <button class="view-btn">VIEW DETAIL</button>
+                        <button class="view-btn" onclick="open_modal()">VIEW DETAIL</button>
                         <button class="book-btn">BOOK NOW</button>
                     </div>
                     </div>
@@ -119,6 +119,15 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal" id="room_modal">
+            <div class="modal-content">
+              <span class="close" onclick="close_modal()">&times;</span>
+              <p>This is a modal!</p>
+            </div>
+          </div>
+
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
