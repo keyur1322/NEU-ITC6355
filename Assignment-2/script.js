@@ -18,12 +18,16 @@ function open_modal(card_title, card_price, card_avail, card_desc) {
   modal_price.innerHTML = card_price_val;
   modal_desc.innerHTML = card_desc_val;
 
-  if(card_avail_val == 'Yes')
+  if(card_avail_val === 'Yes')
   {
+    console.log(card_avail_val)
+    console.log('Yes coming')
     var modal_avail = document.getElementById('modal_avail');
     modal_avail.innerHTML = 'Room is currenly available. Please select date and units in the next process!'
     document.getElementById('txt_not_avail').style.display = 'none';
   }else{
+    console.log(card_avail_val)
+    console.log('No coming')
     var modal_avail = document.getElementById('modal_avail');
     modal_avail.innerHTML = 'Sorry not available!'
     document.getElementById('btn_avail').style.display = 'none';
