@@ -43,7 +43,7 @@ nav ul li a {
 
 /* Home page CSS start */
 .homepage {
-    background-image: url('hotel-booking.png'); 
+    background-image: url('./images/hotel-booking.png'); 
     background-size: cover;
     color: white;
     padding: 100px 20px;
@@ -77,6 +77,76 @@ footer {
 footer p{
     color: black !important;
 }
+
+/* Slider CSS start */
+.advertisement{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    right: 5%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white
+}
+
+.advert_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advert_div .close{
+    align-self: center;
+    margin-right: 3%;
+}
+
+.advert_title{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    color: #060505 !important;
+}
+
+.slides {display: none;}
+img {vertical-align: middle;}
+
+.slider-img{
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+}
+.dot_div{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* Slider CSS end */
 /* Home page CSS end */
 
 /* Room page CSS start */

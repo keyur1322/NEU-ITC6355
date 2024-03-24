@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="nav-div">
-            <a href="index.html"><img class="nav-logo" src="logo.png" alt="logo not found"></a>
+            <a href="index.html"><img class="nav-logo" src="./images/logo.png" alt="logo not found"></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -26,7 +26,30 @@
         <p>Book your room now and enjoy a luxurious experience.</p>
         <a href="#" class="btn">Book Now</a>
     </section>
-
+    <div class="advertisement" id="advertisement">
+        <div class="advert_div">
+            <p class="advert_title">Click here, to check best deal for you!</p><span class="close" onclick="close_slider()">&times;</span>
+        </div>
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img class="slider-img" src="./images/slider/slider-img-1.jpeg" alt="slider-img-1-not-found" srcset="">
+            </div>
+            
+            <div class="slides fade">
+                <img class="slider-img" src="./images/slider/slider-img-2.jpg" alt="slider-img-1-not-found" srcset="">
+            </div>
+            
+            <div class="slides fade">
+                <img class="slider-img" src="./images/slider/slider-img-3.jpg" alt="slider-img-1-not-found" srcset="">
+            </div>
+            
+            <div class="dot_div">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+        </div>
+    </div>
     <section class="features">
         <div class="feature">
             <h3>Best Price Guarantee</h3>
@@ -45,5 +68,6 @@
     <footer>
         <p>Project Hotel Reservation. Group Rudra, Prachi and Keyur.</p>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
