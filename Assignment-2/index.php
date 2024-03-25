@@ -1,3 +1,8 @@
+<?php
+    include('db/db_connect.php');
+    include('db/sql_queries.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +11,15 @@
     <title>Hotel Reservation</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body>
     <header>
         <div class="nav-div">
-            <a href="index.html"><img class="nav-logo" src="./images/logo.png" alt="logo not found"></a>
+            <a href="index.php"><img class="nav-logo" src="./images/logo.png" alt="logo not found"></a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                     <li><a href="contact_us.html">Contact Us</a></li>
                 </ul>

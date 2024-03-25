@@ -1,3 +1,8 @@
+<?php
+    include('db/db_connect.php');
+    include('db/sql_queries.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +14,11 @@
 <body>
     <header>
         <div class="nav-div">
-            <a href="index.html"><img class="nav-logo" src="./images/logo.png" alt="logo not found"></a>
+            <a href="index.php"><img class="nav-logo" src="./images/logo.png" alt="logo not found"></a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                     <li><a href="contact_us.html">Contact Us</a></li>
                 </ul>
@@ -49,21 +54,30 @@
             </div>
         
             <div class="room-listings">
-                <div class="room-card">
+                <?php
+                $i = 0;
+                while($row = mysqli_fetch_array($room_list)) {                
+                ?>
+                    <div class="room-card">
                     <img class="room-img" src="./images/hotel-booking.png" alt="room image not found">
                     <div class="room-content">
-                        <h2 class="card_title">Single room</h2>
-                        <p class="card_price"><span>Price: </span>$100 / night</p>
-                        <div class="avail_div"><span>Available: </span><p class="card_avail">Yes</p></div>
-                        <p class="card_desc">Featuring a comfortable single bed adorned with crisp linens, you'll enjoy a restful night's sleep. The room is thoughtfully designed with modern amenities including a flat-screen TV, high-speed Wi-Fi, and a work desk, making it ideal for both work and relaxation.</p>
-                    <div class="card-btn">
-                        <button class="view-btn" onclick="open_modal('card_title', 'card_price', 'card_avail', 'card_desc')">VIEW DETAIL</button>
-                        <button class="book-btn" onclick="checkRoomAvailability('card_avail')">BOOK NOW</button>
+                        <h2 class="card_title_<?php echo $i; ?>"><?php echo $row['room_title'];?></h2>
+                        <p class="card_price_<?php echo $i; ?>"><span>Price: </span>$<?php echo $row['room_price'];?> / night</p>
+                        <div class="avail_div"><span>Available: </span><p class="card_avail_<?php echo $i; ?>"><?php if($row['room_availability'] == 1){echo "Yes";}else{echo "No";}?></p></div>
+                        <p class="card_desc_<?php echo $i; ?>"><?php echo $row['room_desc'];?></p>
+                        <div class="card-btn">
+                            <button class="view-btn" onclick="open_modal('card_title_<?php echo $i; ?>', 'card_price_<?php echo $i; ?>', 'card_avail_<?php echo $i; ?>', 'card_desc_<?php echo $i; ?>')">VIEW DETAIL</button>
+                            <button class="book-btn" onclick="checkRoomAvailability('card_avail_<?php echo $i; ?>')">BOOK NOW</button>
+                        </div>
                     </div>
                     </div>
-                </div>
+                <?php
+                $i++;
+                }
+                ?>
                 
-                <div class="room-card">
+                
+                <!-- <div class="room-card">
                     <img class="room-img" src="./images/hotel-booking.png" alt="room image not found">
                     <div class="room-content">
                         <h2 class="card_title1">Junior Suites</h2>
@@ -117,7 +131,7 @@
                 </div>
                 <div class="view-more-div">
                     <button class="view-more-btn">VIEW MORE</button>
-                </div>
+                </div> -->
             </div>
         </div>
 
