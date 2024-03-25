@@ -187,7 +187,9 @@ img {vertical-align: middle;}
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .room-img{
-    width: 30%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
 }
 .room-card {
     background-color: #f9f9f9;
@@ -333,6 +335,13 @@ img {vertical-align: middle;}
     color: #E74A5B !important;
     font-weight: bold;
   }
+
+  #modal_type{
+    margin-left: 10px;
+    color: #E74A5B !important;
+    font-weight: bold;
+  }
+
 /* Room page CSS end */
 
 /* About us page CSS start */

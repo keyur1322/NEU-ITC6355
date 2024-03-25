@@ -18,25 +18,29 @@ function showSlides() {
     setTimeout(showSlides, 4000);
 }
 
-function open_modal(card_title, card_price, card_avail, card_desc) {
+function open_modal(card_title, card_price, card_avail, card_type, card_desc) {
   
   var card_title = document.getElementsByClassName(card_title);
   var card_price = document.getElementsByClassName(card_price);
   var card_avail = document.getElementsByClassName(card_avail);
+  var card_type = document.getElementsByClassName(card_type);
   var card_desc = document.getElementsByClassName(card_desc);
 
   var card_title_val = card_title[0].innerHTML;
   var card_price_val = card_price[0].innerHTML;
   var card_avail_val = card_avail[0].innerHTML;
+  var card_type_val = card_type[0].innerHTML;
   var card_desc_val = card_desc[0].innerHTML;
 
   var modal_title = document.getElementById('modal_title');
   var modal_price = document.getElementById('modal_price');
   var modal_desc = document.getElementById('modal_desc');
+  var modal_type = document.getElementById('modal_type');
 
   modal_title.innerHTML = card_title_val;
   modal_price.innerHTML = card_price_val;
   modal_desc.innerHTML = card_desc_val;
+  modal_type.innerHTML = card_type_val;
 
   if(card_avail_val === 'Yes')
   {
@@ -60,23 +64,6 @@ function close_modal() {
 
 function close_slider() {
   document.getElementById('advertisement').style.display = 'none';
-}
-
-function booking_confirmation(){
-  document.getElementById('room_modal').style.display = 'none';
-  alert("Your booking is confirmed");
-}
-
-function checkRoomAvailability(roomavail) {
-  var roomavail = document.getElementsByClassName(roomavail);
-  var roomavail_val = roomavail[0].innerHTML;
-  
-  if(roomavail_val === 'Yes')
-  {
-    alert('Your booking confirmed! Please complete your payment in the next step.')
-  }else{
-    alert('Sorry this room is not available!')
-  }
 }
 
 // Contact Us page script

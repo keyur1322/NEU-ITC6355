@@ -3,6 +3,11 @@
 $rooms_query = "SELECT * FROM tbl_rooms";
 $room_list = $conn->query($rooms_query);
 
+if(isset($_POST['filter_reset'])) {
+    $rooms_query = "SELECT * FROM tbl_rooms";
+    $room_list = $conn->query($rooms_query);
+}
+
 if(isset($_POST['filter_submit'])) { 
     $conditions = [];
     

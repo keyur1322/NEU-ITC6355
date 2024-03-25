@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  
+  .container-3 {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  .success {
+    color: green;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="nav-div">
+        <a href="index.php"><img class="nav-logo" src="./images/logo.png" alt="logo not found"></a>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="rooms.php">Rooms</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="admin.php">Admin</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <div class="container-3">
+    <h2>Payment Details</h2>
+    <form id="paymentForm">
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
+      <div id="cardNumberError" class="error"></div>
+
+      <label for="expiryDate">Expiry Date</label>
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY">
+      <div id="expiryDateError" class="error"></div>
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+      <div id="cvvError" class="error"></div>
+
+      <label for="cardName">Name on Card</label>
+      <input type="text" id="cardName" name="cardName" placeholder="Enter name on card">
+      <div id="cardNameError" class="error"></div>
+
+      <input type="submit" value="Submit Payment">
+    </form>
+  </div>
+  <footer>
+    <p>Project Hotel Reservation. Group Rudra, Prachi and Keyur.</p>
+</footer>
+<script src="payment.js"></script>
+</body>
+</html>
