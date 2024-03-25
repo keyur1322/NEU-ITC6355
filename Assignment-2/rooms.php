@@ -61,7 +61,7 @@
                     while($row = mysqli_fetch_array($room_list)) {                
                         ?>
                             <div class="room-card">
-                            <img class="room-img" src="./images/hotel-booking.png" alt="room image not found">
+                            <img class="room-img" id="room_img_<?php echo $i; ?>" src="./images/<?php echo $row['room_img']; ?>" alt="room image not found">
                             <div class="room-content">
                                 <h2 class="card_title_<?php echo $i; ?>"><?php echo $row['room_title'];?></h2>
                                 <p class="card_price_<?php echo $i; ?>"><span>Price: </span>$<?php echo $row['room_price'];?> / night</p>
