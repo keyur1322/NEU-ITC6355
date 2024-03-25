@@ -13,7 +13,7 @@ document.getElementById('paymentForm').addEventListener('submit', function(event
     // Validate form fields
     var isValid = true;
     if (!cardNumber) {
-      document.getElementById('cardNumberError').paymenttextContent = 'Please enter card number';
+      document.getElementById('cardNumberError').textContent = 'Please enter card number';
       isValid = false;
     }
     if (!expiryDate) {
