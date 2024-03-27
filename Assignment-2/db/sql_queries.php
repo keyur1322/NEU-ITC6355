@@ -38,7 +38,7 @@ if(isset($_POST['filter_submit'])) {
     
     $room_list = $conn->query($filter_query);
 
-    return $room_list;    
+    return $room_list; 
 }
 
 ?>

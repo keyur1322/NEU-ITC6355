@@ -1,6 +1,6 @@
 <?php
-    include('db/db_connect.php');
-    include('db/sql_queries.php');
+    include('../db/db_connect.php');
+    include('../db/sql_queries.php');
 ?>
 
 <!DOCTYPE html>
@@ -9,12 +9,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooms</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/rooms.css">
 </head>
 <body>
     <header>
         <div class="nav-div">
-            <a href="index.php"><img class="nav-logo" src="./images/logo.png" alt="logo not found"></a>
+            <a href="index.php"><img class="nav-logo" src="../images/logo.png" alt="logo not found"></a>
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
@@ -63,7 +64,7 @@
                     while($row = mysqli_fetch_array($room_list)) {                
                         ?>
                             <div class="room-card">
-                            <img class="room-img" id="room_img_<?php echo $i; ?>" src="./images/rooms/<?php echo $row['room_img']; ?>" alt="room image not found">
+                            <img class="room-img" id="room_img_<?php echo $i; ?>" src="../images/rooms/<?php echo $row['room_img']; ?>" alt="room image not found">
                             <div class="room-content">
                                 <h2 class="card_title_<?php echo $i; ?>"><?php echo $row['room_title'];?></h2>
                                 <p class="card_price_<?php echo $i; ?>"><span>Price: </span>$<?php echo $row['room_price'];?> / night</p>
@@ -117,6 +118,6 @@
     <footer>
         <p>Project Hotel Reservation. Group Rudra, Prachi and Keyur.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="../js/rooms.js"></script>
 </body>
 </html>

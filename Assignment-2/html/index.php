@@ -1,6 +1,6 @@
 <?php
-    include('db/db_connect.php');
-    include('db/sql_queries.php');
+    include('../db/db_connect.php');
+    include('../db/sql_queries.php');
 ?>
 
 <!DOCTYPE html>
@@ -9,13 +9,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Reservation</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
     <header>
         <div class="nav-div">
-            <a href="index.php"><img class="nav-logo" src="./images/logo.png" alt="logo not found"></a>
+            <a href="index.php"><img class="nav-logo" src="../images/logo.png" alt="logo not found"></a>
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
@@ -31,7 +32,7 @@
     <section class="homepage">
         <h2>Find Your Perfect Stay</h2>
         <p>Book your room now and enjoy a luxurious experience.</p>
-        <a href="#" class="btn">Book Now</a>
+        <a href="rooms.php" class="btn">Book Now</a>
     </section>
     <div class="advertisement" id="advertisement">
         <div class="advert_div">
@@ -39,15 +40,15 @@
         </div>
         <div class="slideshow-container">
             <div class="slides fade">
-                <img class="slider-img" src="./images/slider/slider-img-1.jpeg" alt="slider-img-1-not-found" srcset="">
+                <img class="slider-img" src="../images/slider/slider-img-1.jpeg" alt="slider-img-1-not-found" srcset="">
             </div>
             
             <div class="slides fade">
-                <img class="slider-img" src="./images/slider/slider-img-2.jpg" alt="slider-img-1-not-found" srcset="">
+                <img class="slider-img" src="../images/slider/slider-img-2.jpg" alt="slider-img-1-not-found" srcset="">
             </div>
             
             <div class="slides fade">
-                <img class="slider-img" src="./images/slider/slider-img-3.jpg" alt="slider-img-1-not-found" srcset="">
+                <img class="slider-img" src="../images/slider/slider-img-3.jpg" alt="slider-img-1-not-found" srcset="">
             </div>
             
             <div class="dot_div">
@@ -75,6 +76,6 @@
     <footer>
         <p>Project Hotel Reservation. Group Rudra, Prachi and Keyur.</p>
     </footer>
-<script src="script.js"></script>
+<script src="../js/index.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
-    include('db/db_connect.php');
-    include('db/sql_queries.php');
+    include('../db/db_connect.php');
+    include('../db/sql_queries.php');
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/common.css">
+
 </head>
 <style>
   /* Styles for the table */
@@ -36,7 +37,7 @@
 <body>
     <header>
         <div class="nav-div">
-            <a href="index.php"><img class="nav-logo" src="./images/logo.png" alt="logo not found"></a>
+            <a href="index.php"><img class="nav-logo" src="../images/logo.png" alt="logo not found"></a>
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
@@ -89,6 +90,5 @@
     <footer>
         <p>Project Hotel Reservation. Group Rudra, Prachi and Keyur.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

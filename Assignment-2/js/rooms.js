@@ -1,23 +1,3 @@
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("slides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-
 function open_modal(card_title, card_price, card_avail, card_type, card_desc) {
   
   var card_title = document.getElementsByClassName(card_title);
@@ -61,38 +41,3 @@ function open_modal(card_title, card_price, card_avail, card_type, card_desc) {
 function close_modal() {
   document.getElementById('room_modal').style.display = 'none';
 }
-
-function close_slider() {
-  document.getElementById('advertisement').style.display = 'none';
-}
-
-// Contact Us page script
-  function validateForm() {
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var message = document.getElementById('message').value.trim();
-
-    var isValidEmail = validateEmail(email);
-
-    if (name === '') {
-      alert('Please enter your name.');
-    }
-    else if (email === '') {
-      alert('Please enter your email address.');
-    }
-    else if(!isValidEmail){
-      alert('Please enter a valid email address.');
-    }
-    else if (message === '') {
-      alert('Please enter your message.');
-    }
-    else{
-      alert('Thank you for contacting us!');
-      document.getElementById("contactForm").reset();
-    }
-  }
-
-  function validateEmail(email) {
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  }

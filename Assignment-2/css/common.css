@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F6F6F6;
+    color: black;
+    padding: 20px;
+}
+
+.nav-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-div a{
+    color: black !important;
+}
+
+.nav-logo{
+    width: 40%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #F6F6F6;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    color: black !important;
+}
+
+/* Common buttons */
+.view-btn{
+    background: #3783BF;
+    padding: 16px;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+.book-btn{
+    background: lightgray;
+    padding: 16px;
+    color: black;
+    border: 0px;
+    border-radius: 5px;
+}
