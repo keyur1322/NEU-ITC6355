@@ -8,19 +8,9 @@
 </head>
 <body>
     <header>
-        <div class="nav-div">
-            <a href="index.php"><img class="nav-logo" src="../images/logo.png" alt="logo not found"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="rooms.php">Rooms</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="contact_us.html">Contact Us</a></li>
-                    <li><a href="admin.php">Admin</a></li>
-                </ul>
-            </nav>
-        </div>
+        <?php include('common/navbar.php'); ?>
     </header>
+
     <div class="container">
         <h2 class="title-1">Who We Are</h2>
         <p class="desc-1">Welcome to our Hotel Reservation System! We are dedicated to providing a seamless and convenient platform for booking accommodations for your travel needs. Our mission is to make your hotel booking experience easy, efficient, and enjoyable.</p>
@@ -42,8 +32,7 @@
         <p class="about-email">Email: desai.rudr@northeastern.edu</p>
         <p class="about-phone">Phone: +1 (647)-547-6693 </p>
     </div>
-    <footer>
-        <p>Project Hotel Reservation. Group Rudra, Prachi and Keyur.</p>
-    </footer>
+    <?php include('common/footer.php'); ?>
+    
 </body>
 </html>

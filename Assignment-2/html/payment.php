@@ -59,19 +59,9 @@
 </head>
 <body>
   <header>
-    <div class="nav-div">
-        <a href="index.php"><img class="nav-logo" src="../images/logo.png" alt="logo not found"></a>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="rooms.php">Rooms</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-                <li><a href="admin.php">Admin</a></li>
-            </ul>
-        </nav>
-    </div>
+    <?php include('common/navbar.php'); ?>
   </header>
+
   <div class="container-3">
     <h2>Payment Details</h2>
     <form id="paymentForm">
@@ -94,9 +84,8 @@
       <input type="submit" value="Submit Payment">
     </form>
   </div>
-  <footer>
-    <p>Project Hotel Reservation. Group Rudra, Prachi and Keyur.</p>
-  </footer>
+  <?php include('common/footer.php'); ?>
+  
   <script src="payment.js"></script>
 </body>
 </html>

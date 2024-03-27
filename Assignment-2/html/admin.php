@@ -36,18 +36,7 @@
 </style>
 <body>
     <header>
-        <div class="nav-div">
-            <a href="index.php"><img class="nav-logo" src="../images/logo.png" alt="logo not found"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="rooms.php">Rooms</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="contact_us.html">Contact Us</a></li>
-                    <li><a href="admin.php">Admin</a></li>
-                </ul>
-            </nav>
-        </div>
+        <?php include('common/navbar.php'); ?>
     </header>
 
     <section class="div_table">
@@ -86,9 +75,6 @@
         </table>
     </section>
 
-
-    <footer>
-        <p>Project Hotel Reservation. Group Rudra, Prachi and Keyur.</p>
-    </footer>
+    <?php include('common/footer.php'); ?>
 </body>
 </html>

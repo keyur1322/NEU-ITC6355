@@ -14,19 +14,9 @@
 </head>
 <body>
     <header>
-        <div class="nav-div">
-            <a href="index.php"><img class="nav-logo" src="../images/logo.png" alt="logo not found"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="rooms.php">Rooms</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="contact_us.html">Contact Us</a></li>
-                    <li><a href="admin.php">Admin</a></li>
-                </ul>
-            </nav>
-        </div>
+        <?php include('common/navbar.php'); ?>
     </header>
+
     <section class="rooms">
         <p class="rooms-heading-1">OUR ROOMS</p>
         <p class="rooms-heading-2">Explore Our <span>ROOMS</span></p>
@@ -85,8 +75,7 @@
                             </div>
                         <?php
                         $i++;
-                        }
-                        
+                    }
                 }else{
                     ?>
                         <h4>Room not found.</h4>
@@ -115,9 +104,8 @@
                 </div>
             </div>
     </section>
-    <footer>
-        <p>Project Hotel Reservation. Group Rudra, Prachi and Keyur.</p>
-    </footer>
+    <?php include('common/footer.php'); ?>
+
     <script src="../js/rooms.js"></script>
 </body>
 </html>
