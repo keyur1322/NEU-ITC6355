@@ -66,7 +66,7 @@
                                     <?php if($row['room_availability'] == 1)
                                     {
                                         ?>
-                                        <button class="book-btn" onclick="checkRoomAvailability('card_avail_<?php echo $i; ?>')"><a style="text-decoration: none;" href="payment.html">BOOK NOW</a></button>
+                                        <button class="book-btn" onclick="checkRoomAvailability('card_avail_<?php echo $i; ?>')"><a style="text-decoration: none;" href="payment.php">BOOK NOW</a></button>
                                         <?php
                                     }
                                     ?>
@@ -99,7 +99,7 @@
                 <div class="avail_div"><span>Available: </span><p id="modal_avail"></p></div>
                 <p id="modal_desc"></p>
                 <div class="modal-buttons">
-                    <button id="btn_avail" class="book-btn"><a style="text-decoration: none;" href="payment.html">BOOK NOW</a></button>
+                    <button id="btn_avail" class="book-btn"><a style="text-decoration: none;" href="payment.php">BOOK NOW</a></button>
                     <p id="txt_not_avail">Sorry the room in not available right now. Please check again later!</p>
                 </div>
             </div>

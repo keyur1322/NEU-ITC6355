@@ -86,6 +86,6 @@
   </div>
   <?php include('common/footer.php'); ?>
   
-  <script src="payment.js"></script>
+  <script src="../js/payment.js"></script>
 </body>
 </html>
