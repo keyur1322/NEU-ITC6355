@@ -62,28 +62,31 @@
     <?php include('common/navbar.php'); ?>
   </header>
 
-  <div class="container-3">
-    <h2>Payment Details</h2>
-    <form id="paymentForm">
-      <label for="cardNumber">Card Number</label>
-      <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
-      <div id="cardNumberError" class="error"></div>
+  <main>
+    <div class="container-3">
+      <h2>Payment Details</h2>
+      <form id="paymentForm">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
+        <div id="cardNumberError" class="error"></div>
 
-      <label for="expiryDate">Expiry Date</label>
-      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY">
-      <div id="expiryDateError" class="error"></div>
+        <label for="expiryDate">Expiry Date</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY">
+        <div id="expiryDateError" class="error"></div>
 
-      <label for="cvv">CVV</label>
-      <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
-      <div id="cvvError" class="error"></div>
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+        <div id="cvvError" class="error"></div>
 
-      <label for="cardName">Name on Card</label>
-      <input type="text" id="cardName" name="cardName" placeholder="Enter name on card">
-      <div id="cardNameError" class="error"></div>
+        <label for="cardName">Name on Card</label>
+        <input type="text" id="cardName" name="cardName" placeholder="Enter name on card">
+        <div id="cardNameError" class="error"></div>
 
-      <input type="submit" value="Submit Payment">
-    </form>
-  </div>
+        <input type="submit" value="Submit Payment">
+      </form>
+    </div>
+  </main>
+  
   <?php include('common/footer.php'); ?>
   
   <script src="../js/payment.js"></script>

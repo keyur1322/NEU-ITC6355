@@ -41,4 +41,13 @@ if(isset($_POST['filter_submit'])) {
     return $room_list; 
 }
 
+if(isset($_POST['alert']) && $_POST['alert'] == 'okay') {
+    ?>
+    
+    <script>
+        alert("working");
+    </script>
+    <?php
+}
+
 ?>

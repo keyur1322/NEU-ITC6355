@@ -12,31 +12,34 @@
     <?php include('common/navbar.php'); ?>
   </header>
 
-  <div class="container-2">
-    <div class="img-div">
-      <img src="../images/contact-us.jpg" alt="img not found">      
+  <main>
+    <div class="container-2">
+      <div class="img-div">
+        <img src="../images/contact-us.jpg" alt="img not found">      
+      </div>
+      <div class="form-div">
+        <h2 class="contact-title">Contact Us</h2>
+        <form id="contactForm" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="button" onclick="validateForm()">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="form-div">
-      <h2 class="contact-title">Contact Us</h2>
-      <form id="contactForm" action="#" method="post">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <div class="form-group">
-          <button type="button" onclick="validateForm()">Submit</button>
-        </div>
-      </form>
-    </div>
-  </div>
+  </main>
+  
   <?php include('common/footer.php'); ?>
   
   <script src="../js/contact_us.js"></script>
